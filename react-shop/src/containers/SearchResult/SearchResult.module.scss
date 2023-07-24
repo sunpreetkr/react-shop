@@ -1,5 +1,6 @@
 .ProductList {
 	margin: 40px;
+
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -11,6 +12,12 @@
 		grid-template-columns: repeat(auto-fit, 300px);
 		justify-content: center;
 		gap: 10px;
+
 		width: 100%;
 	}
+}
+
+.results {
+  color: #232323;
+
 }
