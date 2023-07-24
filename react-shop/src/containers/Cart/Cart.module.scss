@@ -1,0 +1,20 @@
+.Cart {
+	padding: 10px;
+	margin: 20px auto;
+	min-width: 350px;
+
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 10px;
+
+	&__Divider {
+		height: 1px;
+		width: 100%;
+		margin: 40px 0px 20px;
+		background-color: rgba(128, 128, 128, 0.5);
+	}
+
+	&__Total {
+		text-align: right;
+	}
+}

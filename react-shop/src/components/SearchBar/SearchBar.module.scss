@@ -1,0 +1,63 @@
+
+.SearchBar {
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+
+	&__Input {
+		border-radius: 0;
+		border-top-left-radius: 2px;
+		border-bottom-left-radius: 2px;
+		border-bottom: 1px sold black;
+		border-style: hidden;
+		outline: none;
+		height: 1.8rem;
+    width: 12rem;
+		padding: 5px;
+		margin: 0px;
+		font-size: 1rem;
+		background-color: white;
+		text-align: center;
+		color: black;
+		// @media (max-width: ($phone)) and (max-width: $tablet) {
+		// 	width: 10rem;		
+		// }
+
+		&:focus {
+			outline: none;
+
+			&::placeholder {
+				color: transparent;
+			}
+		}
+
+		&::placeholder {
+			color: black;
+			text-align: center;
+			transition: 0.2s;
+		}
+	}
+
+	&__Button {
+		border-radius: 0;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+		border: none;
+		height: 1.8 rem;
+		margin: 0px;
+	
+		background: white;
+
+		color:black;
+		cursor: pointer;
+
+		&:active {
+			background-color:black;
+		}
+	}
+	
+}
