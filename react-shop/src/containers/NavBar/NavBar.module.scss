@@ -1,0 +1,19 @@
+.NavBar {
+	z-index: 1;
+	margin: 5px 10px;
+	color:white;
+	&__Logo{
+		font-size: 22px;
+	}
+
+
+	&__List {
+		&_Links {
+			color:white;
+			margin-left: 40px;
+			display: flex;
+			gap: 20px;
+		}
+	}
+}
+

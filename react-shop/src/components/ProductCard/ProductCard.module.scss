@@ -1,0 +1,46 @@
+.ProductCard {
+	width: 300px;
+	transition: 0.2s;
+
+	&__Img {
+		padding:5px;
+
+
+
+		&_Container {
+	    
+			position: relative;
+		
+			font-size: 1.5rem;
+
+			&_Thumb {
+				height: 400px;
+				object-fit: cover;
+			}
+
+			&_Heart {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				color: red;
+
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__Info {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+
+	&:hover {
+		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+	}
+}
+
+a {
+	text-decoration: none !important;
+	color: inherit !important;
+}

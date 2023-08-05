@@ -1,0 +1,28 @@
+.CartCard {
+	display: flex;
+	flex: row;
+	flex-wrap: nowrap;
+	gap: 10px;
+
+	&__Info {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+
+		&__Price {
+			text-align: right;
+		}
+
+		&__Subtotal {
+			margin: 10px 0px 0px 0px;
+			text-align: right;
+		}
+	}
+
+	&__Img {
+		width: 200px;
+		min-height: 200px;
+		object-fit: cover;
+		border-radius: 5px;
+	}
+}
