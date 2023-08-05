@@ -2,10 +2,15 @@
 	padding: 10px;
 	margin: 20px auto;
 	min-width: 350px;
-
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 10px;
+
+	&__Heading{
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+	}
 
 	&__Divider {
 		height: 1px;
@@ -14,7 +19,9 @@
 		background-color: rgba(128, 128, 128, 0.5);
 	}
 
-	&__Total {
-		text-align: right;
+	&__TotalPrice {
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
 	}
 }

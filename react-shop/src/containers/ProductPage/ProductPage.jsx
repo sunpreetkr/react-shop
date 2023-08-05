@@ -12,7 +12,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  faHeart as filledHeart } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as unfilledHeart } from "@fortawesome/free-regular-svg-icons";
 
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import  { useContext } from 'react'
 import { ProductsContext } from '../../context/ProductsContext'
 
@@ -67,6 +68,11 @@ const ProductPage = () => {
     setCurrent({
 			product: await getProductById(current.product.id)
 		});
+		toast.success('Item added to cart!', {
+			position: 'top-right',
+      autoClose: 3000,
+      hideProgressBar: true,
+    });
 	
   }
 
@@ -108,7 +114,7 @@ const ProductPage = () => {
 						/>
 					)}
 				</h3>
-				<h5>{current.product.price}.00</h5>
+				<h5>${current.product.price}.00</h5>
 				<h6>Colour: {current.product.colour}</h6> 
 
 				{/* Size Selector */}
@@ -147,6 +153,7 @@ const ProductPage = () => {
 				</button>
 			
 			</div>
+			<ToastContainer />
 		</div>
 	);
 };

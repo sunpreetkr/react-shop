@@ -6,7 +6,8 @@ import { CartContext } from "../../context/CartContext";
 
 const Cart = () => {
 	const { cart } = useContext(CartContext);
-	
+
+	const totalPrice = cart.reduce((acc, item) => acc + item.product.price * item.quantity, 0);
 
 	return (
 		<div className={styles.Cart}>
@@ -18,7 +19,10 @@ const Cart = () => {
 					return <CartCard key={index} item={item} />;
 				})
 			)}
+			 <div className={styles.Cart__TotalPrice}>Order Total:   ${totalPrice.toFixed(2)}
+          </div>
 		</div>
+		
 	);
 };
 

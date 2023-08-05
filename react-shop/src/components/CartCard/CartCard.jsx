@@ -21,7 +21,7 @@ const CartCard = ({ item }) => {
 					<h5>{product.name}</h5>
 				</Link>
 				<p className={styles.CartCard__Info_Price}>
-				 Price:	{product.price} 
+				 Price:	${product.price} 
 				</p>
         <p>
           Size: {item.size}

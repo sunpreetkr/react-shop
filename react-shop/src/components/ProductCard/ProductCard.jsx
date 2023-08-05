@@ -52,7 +52,7 @@ const ProductCard = ({ product }) => {
 					<Card.Title>{name}</Card.Title>
 				</Link>
 				<Link to={`/products/${product.id}`}>
-					<Card.Text>{price}</Card.Text>
+					<Card.Text>${price}</Card.Text>
 				</Link>
 			</Card.Body>
 		</Card>

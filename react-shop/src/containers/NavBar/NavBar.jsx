@@ -16,8 +16,17 @@ const NavBar = () => {
 	return (
 		<Navbar bg="dark" expand="md">
 			<Container fluid className={styles.NavBar}>
-			<h4>Shopfinity</h4>
-				<Navbar.Toggle aria-controls="responsive-navbar-nav" color="white" />
+			
+			<Link className={styles.NavBar__Logo} to="/" onClick={handleReset}>
+			Shopfinity
+						</Link>
+						<Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          style={{
+            borderColor: "white", 
+            background: "white", 
+          }}
+        />
 				<Navbar.Collapse 
 					id="navbarScroll"
 					className={styles.NavBar__List}>
