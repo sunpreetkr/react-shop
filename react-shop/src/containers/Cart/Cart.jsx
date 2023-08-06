@@ -19,7 +19,7 @@ const Cart = () => {
 					return <CartCard key={index} item={item} />;
 				})
 			)}
-			 <div className={styles.Cart__TotalPrice}>Order Total:   ${totalPrice.toFixed(2)}
+			 <div className={styles.Cart__TotalPrice}>Order Total: ${totalPrice.toFixed(2)}
           </div>
 		</div>
 		
